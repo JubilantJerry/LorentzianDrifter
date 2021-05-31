@@ -1,0 +1,7 @@
+json tab="mfit.sublime-project" {
+	"settings": {
+		"easy_clang_complete_verbose": true,
+		"ecc_use_libclang": true,
+		"file": "Makefile"
+	}
+}
