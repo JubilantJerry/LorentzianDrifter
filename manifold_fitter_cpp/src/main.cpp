@@ -6,7 +6,7 @@
 constexpr float kPiFloat = static_cast<float>(M_PI);
 
 
-void SphereCoordDiffs(FloatArr left_coords, FloatArr right_coords,
+void SphereCoordDiffs(const FloatArr left_coords, const FloatArr right_coords,
                       size_t batch_size, FloatArr dest) {
   for (size_t i = 0; i < batch_size; i++) {
     float diff_phi = left_coords[2 * i] - right_coords[2 * i];
@@ -19,7 +19,7 @@ void SphereCoordDiffs(FloatArr left_coords, FloatArr right_coords,
 }
 
 
-void SphereMetricRootQuadForm(FloatArr coords, FloatArr vectors,
+void SphereMetricRootQuadForm(const FloatArr coords, const FloatArr vectors,
                               size_t batch_size, FloatArr dest) {
   for (size_t i = 0; i < batch_size; i++) {
     float phi = coords[2 * i];
@@ -135,13 +135,15 @@ int main() {
   };
   fitter.SetTrainParams(&train_params);
   std::vector<float> dest(edge_counts.size() * 3);
-  fitter.Fit(dest.data());
-  printf("[");
-  for (size_t i = 0; i < edge_counts.size(); i++) {
-    printf("[%f, %f, %f]", dest[3 * i], dest[3 * i + 1], dest[3 * i + 2]);
-    if (i != edge_counts.size() - 1) {
-      printf(", ");
-    }
+  for (size_t i = 0; i < 100; i++) {
+    fitter.Fit(dest.data());
   }
-  printf("]\n");
+  // printf("[");
+  // for (size_t i = 0; i < edge_counts.size(); i++) {
+  //   printf("[%f, %f, %f]", dest[3 * i], dest[3 * i + 1], dest[3 * i + 2]);
+  //   if (i != edge_counts.size() - 1) {
+  //     printf(", ");
+  //   }
+  // }
+  // printf("]\n");
 }
