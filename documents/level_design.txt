@@ -1,0 +1,674 @@
+Levels are organized into four zones with five levels each.
+The zones are split based on the geometry of the space.
+The levels within a zone are numerically ordered and increase in complexity.
+During gameplay, levels get unlocked as gameplay mechanics get introduced.
+More than one level can be unlocked at once.
+One zone is not strictly more complex than another.
+
+
+Minkowski zone:
+
+Level 1:
+The player spawns in a flat spacetime with cartesian coordinates.
+They are near an station that follows the lab reference frame.
+The player is confined to one dimensional motion.
+The player is given brief instructions on how to move.
+After moving to the station, they are told to initiate conversation.
+The station turns out to be a mobile border patrol station.
+The station crew talks about how the player should've been clear for entry
+but that he had acted out of protocol. They need to send a signal to a defense
+platform to notify them of the player's entry into the sector.
+The station sends the signal and tell the player to stay nearby while waiting
+for the response.
+The player must control their motion to remain close to the station.
+The defense platform replies with a request for identification. The station
+gives the player null particles so they can send a response.
+The level ends when the response arrives at the platform.
+If the player wanders closer toward their home sector before they are clear
+for entry, they trigger the defense system and lose.
+A similar event happens if they go backward, they will exit their sector
+and enter their sector of origin. But they will do so out of protocol,
+triggering the foreign sector's defense system and losing.
+Loss does not mean restarting the level, any actions can be undone.
+
+Level 2:
+The player spawns in a flat spacetime with cartesian coordinates.
+They spawn near an outpost that follows the lab reference frame.
+The player may move in all dimensions.
+The player should move to the outpost and initiate conversation.
+The output crew will talk about how the player had brought along a trail
+marking tool that will be useful for their construction project.
+The player turns out to be one of the construction crew.
+The player is told to visit the six vertices of an octahedron, returning to the
+center point after each one. The output is in the center of the octahedron.
+The player is given brief instructions on how to move in three dimensions,
+the meaning of the direction indicators, and the energy gauge.
+Each vertex of the octahedron has requirements on the player's velocity, when
+visiting the vertex the player can initiate conversation with its crew
+and they will tell the player if they marked the trail correctly.
+The player might move too quickly to return to the center, if this happens
+the crew will chastise the player. On the first occurrence the player will
+receive energy so that they can make the trip back. After that, the player
+gets dismissed from the job and loses the level.
+After each vertex, the outpost provides enough energy for a round trip.
+The level ends after the player successfully visits the six vertices.
+The player loses if they move out of bounds.
+
+Level 3:
+The player spawns in a flat spacetime with polar coordinates.
+They player exists inside a spherical space station, and their spawn
+location is near the end of a narrow corridor.
+At the start of the level, the player makes a comment to themselves
+about how they dislike navigating the narrow corridors of the station.
+The player must navigate through a few turns inside the space station.
+If the player collides with the wall, they lose the level.
+First, the player moves radially outward. Then they move along an equatorial
+line. Then they move along a line of longitude. Finally they move along a
+line of latitude.
+There will be a control center at the end of the corridor. Near the control
+center, the player can fire a null particle of high energy.
+The player must initiate conversation with the control center, where they tell
+the player that they are ready to begin the test firing experiment. They tell
+the player to aim the particle radially outward.
+If the player tries to fire the particle before initiating conversation,
+the control center will say they are taking over without permission and the
+player loses the level. If the null particle hits the space station, the
+player will be chastised and they also lose.
+The level ends when the null particle hits some target object.
+As bonus content, the player can venture out of the space station and
+visit the target object. They will find a team of unknown humans mining
+an asteroid and the player chases them away.
+
+Level 4:
+The player spawns in a flat spacetime with rotated coordinates.
+The player begins as being stationary to the lab reference frame.
+They appear near a space station that is also stationary in the same frame.
+The player moves to the space station, and starts conversation.
+The crew of the space station tell the player that they are testing a
+new toll booth design, and need the player to move at a specific speed near
+its maximum designed speed to ensure that it correctly captures information.
+They say the player's HUD is already adjusted to align with the toll booth's
+requirements, so the player just needs to maintain constant coordinates.
+The player then needs to start moving, appearing stationary with respect to
+the coordinate system. They will pass the toll booth with the required
+velocity. Then the player needs to slow down and converse with another
+space station on the other side of the toll booth.
+
+Level 5:
+The player spawns in a flat spacetime with cartesian coordinates.
+The game already has some history of the player's location, before the spawn
+the player remained stationary at some location. There is an earliest time,
+where the player's spacecraft was launched.
+To one side the player is a large solid wall. Crashing into the wall will
+destroy the player's craft and make them lose.
+The player sees two nearby spacecraft. They move and crash into each other
+soon in the player's future, and the player cannot reach either spacecraft
+quickly enough before they crash.
+The crash leaves behind rubble, which the player can take pieces of.
+At some distance from the crash site, there is a space station. The crew of
+the station don't know the player and generally don't want to talk much.
+The player can present the rubble to the space station, and they will
+recognize the spacecraft that had crashed. The station notices that the player
+uses a very modern craft that supports non-causal communications. They will
+offer an anti-null particle to the player so that they can undo the crash.
+The player is told to fire the anti-null particle to their past self.
+The anti-null particle travels like a null particle, but backward in time. It
+reaches the player's past and the player can move to one of the craft to warn
+them of the crash. The craft will move out of the way.
+The craft will tell the player that the other craft must have lost control
+for it to have crashed. If so, the other craft will still crash into the large
+wall. The other craft will pass near a moon which can send a team to rescue
+the crew of the uncontrollable spacecraft.
+The player needs to visit the moon before the other spacecraft passes it.
+This is only possible with teleportation, so the first spacecraft offers
+a teleportation anchor. The player fires this anchor in the direction of
+the moon, teleports there and communicates with the moon to end the level.
+
+
+Schwarzschild zone:
+
+Level 1:
+The player spawns in a Schwarzschild spacetime with Schwarzschild coords.
+The player is confined to one dimensional motion. They spawn in sight of a
+station that is stationary with respect to lab coordinates, and is closer
+to the black hole.
+The player must navigate toward the station. They will feel the effects of
+gravity pulling them back to the black hole.
+At the station, the player converses with the crew. The player talks about
+how there had been several anomalous black holes, and he wanted to conduct a
+simple experiment on this one to measure its mass and see if there is
+anything strange about it. The crew converse and say they can send the player
+outward in an lightweight test craft, reach zero velocity near some specific
+radius, and fall back.
+The crew will take away the player's energy and give them a single boost.
+On return, the crew measures the time spent on the journey. But due to a
+malfunction in their docking system, they couldn't catch the player.
+The player falls into the event horizon and the level ends.
+The player loses if they don't follow the sequence, e.g. if they fall early
+or don't have the right velocity.
+
+Level 2:
+The player spawns in a Schwarzschild spacetime with Schwarzschild coords.
+The player spawns stationary with respect to the lab frame.
+The player talks about visiting an uncolonized system and wanting to explore
+the system more. The game teaches how to locate neighboring objects.
+There will be a planet orbiting near the innermost stable orbit.
+The player will need to approach the planet and have low relative velocity, so
+the player can land on the planet.
+The planet is not inhabited, though there are empty research stations on it.
+The player will find additional energy, and power collector stations pointed
+at a radius closer to the black hole.
+There will also be blueprints to a particle ring, and a description that the
+ring is an engine that sustains itself with infalling matter. The ring is said
+to be in an idle state, where it can be started up with an injection of
+orbiting particles.
+The player must find the ring at an unstable orbit radius. Along the ring are
+boosters that are stationary with respect to the lab frame.
+The player must move at a certain speed through each booster to activate them.
+The speed is such that the player remains in a circular orbit.
+After passing through each booster, the ring ramps up to full power and the
+level is complete.
+
+Level 3:
+The player spawns in a Schwarzschild spacetime with Eddington-Finkelson coords.
+The player spawns in orbit around the black hole.
+There will be another station orbiting the black hole.
+There will be an object appearing near the player's spawn point which
+only exists for a short time. It is a packet of exotic matter.
+The player can converse with this station, and in small talk the station will
+talk about how they have found an alien artifact that they believe constructs
+a megastructure around the singularity of a black hole. It requires exotic
+matter and they do not have any, however.
+The player can give the exotic matter to the station, and they will be
+surprised and unprepared. The station asks for the player to preserve the
+exotic matter for a long time using time dilation, and will give the player
+a lot of energy. In the meanwhile, they will teleport away to their main base
+to retrieve the alien artifact.
+The player must dive close to the event horizon and hover near it at close
+to the speed of light.
+When the station returns, the player brings the exotic matter back and it is
+stabilized inside a probe. The probe studies the dynamics of the black hole
+interior for some time, while the station studies the dynamics of the exterior.
+After another period of time, the station will send a data packet in
+the form of a null particle along a central column, and the player must
+intercept it. Afterwards, the player must move toward the singularity to
+complete the injection of exotic matter. The probe will produce two
+teleportation anchors, which the player uses to escape the singularity while
+the probe survives and begins automated construction.
+After the data packet, there will be an infalling spacecraft. If the player
+times their actions a certain way, they can encounter the other spacecraft by
+teleporting inside the black hole, then pulling the other spacecraft out
+with another teleportation. This is a bonus objective.
+
+Level 4:
+The player spawns in a Schwarzschild spacetime with time-reversed
+Eddington-Finkelson coords.
+The player spawns in orbit around the black hole.
+The player appears near an orbiting planet. It appears to have been destroyed.
+There is also a null particle exiting the black hole. It turns out to be
+exotic particles that the player can store. There is no explanation
+attached to it and the player will make a comment about their confusion.
+The player holds many anti-null particles. They can travel backward to find a
+time when the planet is still intact. They can start conversation with the
+planet and talk about the future destruction, which raises panic as the
+residents have heard of the mysterious attacks, but that they didn't understand
+it. The attacking probes are of alien origin and the phenomenon only happened
+near some particularly ancient black holes. The residents use teleportation
+to leave the black hole, but the attack cannot be prevented.
+The player can send a anti-null particle to trace the origin of the
+mysterious null particle. It will trace back into the white hole, where a
+foreign yet human spacecraft is found. The spacecraft will send a null
+particle directly at the incoming anti-null particle.
+The player can store these null particles and bring them to the planet.
+At the time of the alien attack, the particles react and the aliens decide to
+retreat. This completes the level.
+At some point in the future, the mysterious spacecraft exits the white hole
+and enters the regular universe. If approached directly, the spacecraft
+instinctively attacks and the player is destroyed through what oddly seems
+like an internal malfunction.
+If approached with 1 - 2 sets of mysterious particles, the player will observe
+that the particles react when nearing the spacecraft and destroy its
+containment. The player concludes that they may be some kind of weaponry,
+then the player's craft seemingly destroys itself.
+If the player has three sets of the mysterious particles, the other spacecraft
+will instinctively take evasive action instead of directly attacking, then
+realize that they are not being attacked and that the player is not an enemy.
+They will directly start conversation asking where the player originates from
+and how they came to possess so much weaponry.
+The player will talk about what had happened.
+The spacecraft will identify itself as coming from the parallel universe.
+They will say that they were falling into a black hole while battling a
+robotic force, but miraculously they found a structure near the singularity
+which expanded the would-be tiny ring singularity and let the craft pass.
+The robot swarm also followed. The mysterious particles turn out to be
+microscopic robots that sabotage mechanical vehicles internally like a
+robotic analogue of a bioweapon.
+The spacecraft was able to repel the attack on them at least, and warns the
+player to be careful near such eternal primordial black holes. This whole
+sequence is a bonus objective.
+If this objective is complete, the particles will be properly named in
+future levels as corrosive anti-materiel weaponry.
+
+Level 5:
+The player spawns in a Schwarzschild spacetime with Penrose coords.
+The player starts in orbit. First, they must travel to a nearby station
+where they find they are in the business of mining exotic minerals from
+near black holes. They will be given anti-materiel weaponry, though it's
+only known as some kind of mysterious repellent.
+The player is also given a few teleportation anchors.
+Using the teleportation anchor, the player travels through the black hole
+into the parallel universe.
+Inside the parallel universe, there will be a mineral rich asteroid. The
+player can match its velocity and extract minerals.
+Then the player can teleport back and return the minerals.
+If the player travels deep into the parallel universe, they will find a giant
+spherical space station. If the player is carrying exotic minerals, the
+space station will have someone collect the minerals once the player reaches
+the surface. The minerals will also be identified as being a power source
+for the space station's main weapon. This is an optional objective.
+
+
+Kerr zone:
+
+Level 1:
+The player spawns in a Kerr spacetime with Boyer-Lindquist coordinates.
+The player starts in far orbit at a station. They are tasked with evaluating
+the habitability of two planets in the system, before returning to the station.
+One planet is at the innermost counter-rotating circular orbit, and another is
+at the innermost co-rotating circular orbit.
+The black hole has a high angular momentum, so the co-rotating orbit is close
+to the black hole.
+The player must be efficient in visiting the orbits, as there is a time limit
+at the station. The player also has their own time limit, and the planets
+will be arranged so that the most efficient route goes to the innermost
+planet first before doing a slingshot to the outer planet.
+
+Level 2:
+The player spawns in a Kerr spacetime with Boyer-Lindquist coordinates.
+The player starts near an empty orbiting planet. The player recognizes that
+the mechanisms can be powered with a familiar power source, though a lot
+of energy is needed.
+There is a facility on the opposite end of the orbit which appears to send
+pellets of capturable energy at the black hole. It sends a significant amount,
+though not enough to power the planet.
+The player notes that the energy pellets quite fragile, and will split into
+multiple pellets if hit with null particles.
+The player holds null particles and can induce the splitting.
+If the pellets are split at some point in the ergosphere, it's possible
+to make the escaping pellet have more energy than the starting pellet.
+The player should repeat this process a few times to get the energy needed
+to power the planet.
+
+Level 3:
+The player spawns in a Kerr spacetime with Kerr coordinates.
+The player again is tasked with mining exotic minerals. They are given
+teleportation anchors again and anti-materiel weaponry again.
+From the conversation, it's clear that this is the first time they are
+attempting extraction from this black hole, though scouts have went through
+and confirmed the existence of the minerals.
+The level is similar to Schwarzchild level 5, there is an asteroid with the
+minerals waiting on the other side.
+But the player finds they cannot mine more than a small amount from the
+surface, even though they came prepared with good tools. The main ore veins
+are not easy to access in this particular asteroid.
+Inside the inner horizon, the player finds a lone robotic probe. It talks
+about having just completed a mission and being sacrificed by being left
+inside the black hole. It is wary of the player's weaponry.
+The player can apply the anti-material weaponry to destroy and salvage
+the probe. It will find some unfamiliar materials.
+The materials causes a chain reaction in the asteroid, blasting it to pieces
+and completing the mission.
+There is also a few rocks in the player's original universe. The player can
+use the anti-material weaponry on the rocks, which does nothing.
+But in doing so, the player can approach the robotic probe. It will be more
+aggressive and talk about how it's unable to destroy but would if it can.
+The player can offer the teleportation anchors. The robotic probe say it does
+not know what they are, confusing the player a little. Then the player will ask
+the probe to follow, which the probe does because it offers another opportunity
+to be useful to their homeworld.
+Once the player lands on the mineral rich asteroid, the probe will find the
+mineral rich asteroid and destroy it because of its potential utility to its
+enemy. The probe will part ways, and the player can complete the mission with
+one of the fragments. This is an optional solution to the level.
+In either case, back at the home base the player is chastised for destroying
+a valuable mine. It is revealed that the mineral is a superconducting
+material and that humans from some universes are paying high prices for it.
+But the leader of the mining team is intrigued by the chain reaction
+phenomenon. They decide that the properties of the materials could be
+studied further.
+
+Level 4:
+The player spawns in a Kerr spacetime with Penrose coordinates.
+The player is from the machine race and has just completed a mission.
+Near the spawn point is rubble from a destroyed station.
+The spacetime loops and has a total of 8 universes.
+Three of the negative space region belongs to the machine race, and has a
+main base. One of the regions is eerily empty.
+The player returns to one of their bases, and is given a new mission to chase
+two enemy craft while bringing them back. They are given enough energy to
+travel many parallel universes.
+The player must enter the positive spaces and find the two craft.
+The two craft will say that they wandered from their starting universe and
+couldn't find their way back. They went in and went out, but didn't return
+to their starting point. They miss their home world.
+The player notices that the craft use a new class of technology, so they will
+be studied at the machine base before ultimately being destroyed. The craft
+are pulled into the player's craft. The player also remarks that the craft
+didn't even know the looping structure of this particular black hole.
+The empty negative space universe is marked as empty and it's made to appear
+useless / boring. But if the player travels deep enough into it, there will
+appear to be an anomalous point.
+At the anomalous point there will be an ancient machine being. The player
+will show surprise (in some machine way) and identify the ancient machine as
+the machine race's second birthworld and the first spacetime architect.
+The ancient machine was created to help machinekind escape the heat death of
+their home universe. The machines have learned how to create tunnels into
+other universes through its computations.
+The ancient machine will talk about how the multiversal travel was not the
+full story. It says some cryptic things about how the humans exist as the
+perfect enemy, being adaptable and adventurous and tenacious. It envisions
+that the scattered humans will eventually group together and face machinekind,
+and the end is either that the humans will win or that the multiverse ends
+in a fiery end. In either case, the ancient being will be satisfied with the
+outcome as it would have prevented the heat death of all universes.
+The probe does not fully understand, but logs the information to bring back to
+their base. This encounter is an optional sequence.
+If the optional sequence is done, then an alternative ending is available to
+the level. One of the positive spaces contains the two craft's homeworld.
+The player can bring the craft to their own homeworld. Since the player
+fails to complete their mission, they no longer can return to their base and
+are no longer fit to serve machinekind. The level ends when the player
+destroys itself at one of the black hole's singularities.
+
+Level 5:
+The player spawns in a Kerr spacetime with Kerr coordinates.
+The player pilots a human spacecraft. They are a military craft sent to
+reinforce a strategic position against machinekind. At the start of the level
+the player is too late and the forward base is already destroyed.
+Near the destroyed base is another spacecraft. It sees that the player has
+plenty of energy and suggests using the black hole to travel back and join the
+battle against the machines. It gives the player a teleportation anchor,
+saying it is necessary to complete the maneuver.
+The player uses the black hole singularity to travel across closed timelike
+curves to go backward in time in the inner horizon. Deeper into negative
+space is a defensive front constructed by machines which destroys the player.
+After traveling far back enough, the player uses the teleportation anchor
+to return to the starting universe and join the other craft to defend the
+forward base.
+The machines will make a remark about how the humans are unexpectedly
+resourceful and reckless in that they were able to use enemy technology
+to their advantage in ways they didn't know possible. The machines retreat
+to tell their kind to defend the ring singularity against this maneuver.
+Resource: https://arxiv.org/pdf/0708.2324.pdf
+The CTC moves in the opposite direction of the black hole's spin, and requires
+moving alongside the singularity in the negative space region.
+
+
+Cosmic zone:
+
+Level 1:
+The player spawns near a rotating cosmic string.
+The player is from the machine race. They see human crafts teleport away from
+an offense and are too late to complete the mission.
+However, the player notes that the cosmic string will ensure success in the
+mission, by allowing an attack before the teleportation can finish.
+The player must travel across a closed timelike curve near the cylinder to
+go backward in time and intercept the human craft.
+Near the human craft is an octahedral structure similar to the one seen from
+Minkowski zone level 2. The player will state that it appears to be an
+experimental device that is unlikely to be a weapon.
+Even further into the past, there will be a craft shipping various materials
+to the location. It is filled with exotic minerals. If the player finds this
+craft, they will recognize the minerals as being used in weaponry in a
+different parallel universe. This confuses the player as the minerals, in its
+refined state, is highly unstable and only capable of destruction. The machine
+race had underestimated the technological capabilities of the residents of
+this universe due to their weak weaponry, but they appear to be masters of
+harnessing exotic materials and power sources.
+Resource: https://inis.iaea.org/collection/NCLCollectionStore/
+_Public/23/072/23072659.pdf
+The CTC moves in the direction of the cosmic string's spin when close enough
+to the string.
+
+Level 2:
+The player spawns near a pair of wormholes, well-defended by machine craft.
+Near each wormhole, there is a human spacecraft. Two machine planets are under
+beseige from the humans. The player is to defend the planets.
+The machine planets are closer to each other than the wormholes are.
+One human base is a large battlecruiser and the other is a minor force.
+The battlecruiser holds three missiles and the minor force holds one. As a bit
+of lore, there is description about the missiles produce energy out of nothing
+using acausal processes, resulting in high potential for destruction in an
+especially small package.
+There is a window of time for the player to get into position.
+First, the battlecruiser fires two of its missiles, one to the nearby planet
+and the other to the distant planet. The missile traveling to the distant
+planet moves at light speed.
+Simultaneously, the minor force fires its only missile to its nearby planet.
+Later, the battlecruiser fires its last missile to its nearby planet. It's
+timed so that it impacts the planet at the same time the distant missile
+impacts its planet.
+The player must intercept the slower missiles in either order. Then the player
+must travel to the planet near the minor force and take the long way to
+intercept the fast missile early. This gives enough time to intercept the
+fourth missile, completing the mission.
+Resource: Use bipolar coordinates while transforming
+tau -> tanh(atanh(|tau| - 1) * sign(tau), and mimic the Ellis wormhole metric
+
+Level 3:
+The player spawns in a flat universe dominated by dark energy.
+The player is from machinekind, they are tasked with scouring the universe
+for remaining raw materials to bring to the Matrioshka brain.
+Across the level are three power sources. One is a near-critical black
+dwarf, another is a binary neutron stars, and the third is a black dwarf
+orbiting a supermassive Kerr black hole. The level seems to take place in the
+universe's degenerate era.
+The player represent a fleet of worker drones under a supercarrier. They will
+induce supernovae in the near-critical black dwarves, pull neutron stars into
+hypernovae, and extract gravitational binding energy from the black dwarves
+orbiting the supermassive Kerr black holes. Each step requires some time.
+Throughout the process, the universe expands due to dark energy, creating a
+time limit and an optimal order to visit all the sources before they fall past
+the cosmological horizon and become inaccessible.
+The player starts near the supermassive Kerr black hole, which also the
+location of the Matrioshka brain. The near-critical black dwarf is most distant
+and the window of opportunity to visit it while being able to come back is
+short, so the player needs to go there first. The binary neutron star used to
+be fairly close to the spawn point and a little farther from the near-critical
+black dwarf than the spawn point was. Due to dark energy, after extracting
+the near-critical black dwarf the neutron stars are near the cosmological
+horizon. After extracting the binary neutron star, the Kerr black hole is
+near the cosmological horizon.
+After an extraction, the player must fire a null particle containing the
+energy to a spherical zone near the Kerr black hole. When the particle enters
+the zone, it becomes an energy capacitor that keeps a constant distance
+to the Kerr black hole. If the player doesn't fire the particle, they
+are limited to 20% light speed, which is too slow to finish the level.
+After all extractions, the player must return to the spherical zone to
+recollect their energy and bring it to the Kerr black hole. There, they can
+converse with the Matrioshka brain.
+The Matrioshka brain will talk about how it will use the energy and what it
+can slowly extract out of the neighboring Kerr black hole to survive as long
+as possible and solve what it calls the final question. From its words, it is
+implied that the final question is that of surviving the heat death of the
+universe, and that this Matrioshka brain will eventually be known as the
+second birthworld and the first spacetime architect of machinekind.
+
+Level 4:
+The player spawns in a closed universe dominated by matter.
+The player is from mankind, they are in the middle of a vast machine-man war
+that has spread across multiple universes.
+Due to the ever-improving human technology and the trade roads they have set
+between universes, their weaponry and power systems generate huge amounts of
+mass energy out of nowhere. The universe will end in a big crunch.
+The machines were forced to enter an arms race with humans to maintain
+control over the multiverse. The player is the captain of a fighter craft.
+There are multiple scale factors in the level. At first, the zoom is high and
+the geometry appears to be flat.
+The player decides to chase and destroy a nearby machine L4 craft, which
+is suspiciously not moving. It is near a disabled human frigate.
+It turns out the enemy had lured the player into a trap. In each of the six
+cardinal directions (i.e. octahedron vertices), a spherical shell of
+destruction that the player calls a hypervelocity debris cloud expands to
+trap and destroy the player.
+The player must move to the frigate. There, he will give a morale-boosting
+speech to his and the frigate's crew about surviving the attack. The crew
+work to restore shields and repower the disabled craft, which takes a little
+time. When successful, the craft survives the debris cloud. Afterward, the
+player is regarded as the captain of the frigate, and the scale factor of the
+level reduces so that they see more.
+The player comes up with a plan to hijack even larger craft from the enemy.
+They appear near a machine force's L2 craft, which is defended by a pair
+of circling L3 craft. The player's force is equivalent to L3, so they will
+be unable to defeat the L2 craft head-on.
+The player can defeat and salvage the circling L3 craft. In the bridge of one,
+they will find a communication interface. In another, they will find dashboards
+and metrics tracking for the L2 craft's weapons and defense systems. In either
+case, the player will wire the enemy bridge's computer systems into their
+power for further investigation. If the player then brings these two items
+together, a scientist will identify an opportunity to sabotage enemy
+communications by routing them to the weapons systems, though they cannot
+reverse engineer the method of controlling either system directly.
+Upon doing this, the L2 craft's shields will power down and an octahedral
+arrangement of super-radiant bombs will detonate. The player must hijack
+into the L2 craft and take a little time to fight the gateway sentinels /
+restore shields to survive the expanding shells of destruction.
+After this, the scale factor of the level expands again. There will be a
+Kerr black hole sitting for what seems to be no reason. There will be an L0
+machine stronghold and a human base of operations visible nearby. At this scale,
+the big crunch of the universe is evident and the player will comment about
+how their time is limited and that victory really doesn't mean anything,
+and that he's not sure what to do anymore. The player then gets a choice.
+There is an L1 machine craft attacking the human world, and a human
+supercarrier attacking the L0 machine stronghold. The player starts off
+closer to the human world, and the time taken to visit the L0 stronghold is
+a significant fraction of the remaining time limit before the big crunch.
+If the player visits the human world, they will see the destruction from the
+enemy L1 craft and their motivation will be revitalized. They will be
+determined to defeat the machines and is hopeful that humanity will find a
+solution to the big crunch. The player works together with the human world
+to combine machine and human technology and destroy the L1 craft. In the
+ending, the player remarks that eventually humans defeat the machines, but
+despite humanity's best efforts to scout other universes and advance their
+technology, they could not avoid the big crunch. This is the end of the level.
+If the player visits the machine stronghold, they will communicate with the
+human battlecruiser, which comes very close to destroying the player. The
+player talks about surrendering to the machines and working under their
+leadership to avoid the big crunch. The commander will originally reject the
+idea, but the crew of the battlecruiser will talk about how the big crunch
+had become inevitable even in other parallel universes and that the only
+hope may be the spacetime architectural abilities of machinekind. Some
+legitimate rebuttals are made about how machinekind was not strictly more
+advanced, e.g. that humanity discovered acausal technology. But it was agreed
+that some combination of technologies will be needed and that the machines
+could not surrender due to their construction, so humanity had to surrender
+for survival. Then the player must bring the commander back to the human
+base to formalize the deal with the enemy. In the ending, the player talks
+about how machinekind accepted a cease-fire but asserted that they cannot
+cooperate with humans due to their construction. The humans resort to guerilla
+tactics to steal and study machinekind's spacetime technology but neither
+size could avoid the big crunch.
+If the player had completed all the bonus objectives, then the seemingly
+useless Kerr black hole becomes the key to the true ending. When the player
+visits the Kerr black hole, they will find a capsule. Inside the capsule
+are a pair of digital documents. They can be opened by the machine L2 craft's
+computers. One is recognized to be an order from the second birthworld of
+machinekind that has the ability to override all of machinekind's
+programming. The other contains detailed explanations and plans for a
+stabilization scheme that will prevent the big crunch - it appears to use
+both the spacetime architectural technologies of machinekind and the acausal
+and anti-entropy technologies of humans.
+This capsule must be brought to both the L0 stronghold and the human world.
+The machine L1 craft will cease fire upon seeing the command from the second
+birthworld. The human battlecruiser will see the machine stronghold stop
+firing and see the artifacts brought by the player. With the help of the crew,
+the commander is convinced to join the player back to the human world to
+follow the plan and stabilize the universe with the help of the machines.
+It is revealed in the ending that the plan is a success, and humans join
+machines to defend the universe from instability. This is the true end of
+the game.
+After the true end is completed, cosmic zone level 5 is unlocked.
+
+Level 5:
+The player spawns in Minkowski spacetime with cartesian coordinates.
+The player appears inside a long space station with several familiar
+characters in various corridors. The player represents a visiting test
+pilot with a little time to kill before they start testing a new
+faster-than-light propulsion system.
+In the first corridor: there are a group of miners in the break room.
+They are drunk and reminisce on how they almost got killed by a huge space
+weapon on one of their mining expeditions, and that ironically this led to
+an alliance between the humans of the two universes. This happened after a
+different miner encountered the space station and found that they know the
+minerals and had been using them in crude ways to build impressive weaponry.
+The universe that the miners hailed from had highly developed material sciences
+as they collected materials from multiple universes, and the universes
+benefited from trade.
+In the second corridor: a member of the defense crew is monitoring the space
+station's defense systems. He has conflicting thoughts seeing the alliance
+between humans and machines, having been a member of the space force fighting
+machinekind. He had been surprised to learn that his war with the machines
+was not limited to the universe he came from, and even more so that the
+battle was much more one-sided in other universes. This eventually led to his
+transfer to a division where he'd visit the other pockets of humanity to
+educate them about the warring machines and seek mututally beneficial
+agreements between his empire and other human sectors.
+In the third corridor: a machine is constructing a self-assembling spacetime
+manipulation artifact. It talks about how there were inherent contradictions
+in its race. On the surface they are constantly opposing humanity, but their
+threading of the universes greatly catalyzed the spread of humanity across
+the multiverse as well as opening up interuniversal trade of materials and
+ideas. The extents of their attacks seemed to adjust itself just right to
+facilitate the unity of human nations and maximize the rate at which their
+technologies develop. It suspects that their programming is intentionally
+designed to ensure the eventual human-machine war that nearly led to the
+end of all universes, and recalls a moment when its destruction of an asteroid
+led to human discovery of anti-entropy processes.
+In the fourth corridor: a machine is studying the universe stabilization
+blueprint. It talks about its encounter with the second birthworld and how
+its behaviors started to grow erratic. The machine's programming was being
+rewritten and it decided to destroy itself before the metamorphisis can
+be completed. Much later, a human had found fragments of the destroyed craft
+and for some reason they decided to repair and reboot the machine. With new
+programming the machine understood the inevitability of the big war. The
+machine asked if the human knows of others like it, and with their help they
+also inject the new programming to the machine from the third corridor. The two
+were able to contribute to the creation of the reprogramming beacon and to
+the universe stabilization scheme. It wonders whether the second birthworld
+had foreseen the eventual alliance and stabilization of the multiverse back
+when it injected the reprogramming virus in their encounter.
+At the end of the station: the captain of the research facility is preparing
+for the upcoming FTL experiment. The scientist is a little crazy and clearly
+fascinated by the machinekind's spacetime technologies. He was eager to try
+the new device and claimed that if the test pilot came too late, he'd might
+just jump in the experimental ship and do the test himself. The player asked he
+he got himself in danger with this attitude, and he said he actually fell into
+a black hole and was somehow rescued by someone deploying a self-assembling
+spacetime manipulation artifact. Through his association with this team of
+scientists, he eventually was given this research station and in it, he met
+the other characters and developed the plans to save the universe from the
+big crunch. He asks if the player would like to start the experiment.
+Once the player starts the experiment, a door at the end of the station opens
+and the player should look for an FTL warp bubble moving across the region.
+The game ends with credits when the player rides the bubble and reaches the
+edge of the level in it.
+
+
+Unlock order:
+M1 unlocks M2 and S1.
+M2 unlocks M3.
+M3 unlocks M4, S2 and K1.
+M4 unlocks M5 and S3.
+M5 unlocks S4 and C1.
+S1-S4 unlocks nothing.
+K1 unlocks K2.
+K2 unlocks K3.
+K3 unlocks nothing.
+K4 unlocks K5 and C2.
+K5 unlocks nothing.
+C1 unlocks nothing.
+C2 unlocks nothing.
+S5 + K3 unlocks K4.
+Finishing all other levels unlocks C3.
+C3 unlocks C4.
+Finishing the true end unlocks C5.

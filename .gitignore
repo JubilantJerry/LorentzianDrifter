@@ -1,4 +1,12 @@
 *.sublime-workspace
 */__pycache__
 manifold_fitter_cpp/build/*
-
+unity_project/LorentzianDrifter/[Ll]ibrary/
+unity_project/LorentzianDrifter/[Uu]serSettings/
+unity_project/LorentzianDrifter[Tt]emp/
+unity_project/LorentzianDrifter/[Oo]bj/
+unity_project/LorentzianDrifter/[Bb]uild/
+unity_project/LorentzianDrifter/[Bb]uilds/
+unity_project/LorentzianDrifter/[Ll]ogs/
+unity_project/LorentzianDrifter/[Mm]emoryCaptures/
+unity_project/LorentzianDrifter/.vs/

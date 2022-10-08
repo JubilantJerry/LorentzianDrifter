@@ -15,19 +15,23 @@ constexpr size_t kCacheLineSize = 64;
 
 
 struct SurfaceGeometry {
+  using CoordDiffsFn =
+  	  std::function<void(const FloatArr, const FloatArr, size_t, FloatArr)>;
+
+  using MetricRootQuadFormFn =
+  	  std::function<void(const FloatArr, const FloatArr, size_t, FloatArr)>;
+
   /// Computes the canonical difference vector between batches of coordinate
   /// pairs. The difference vector is not necessarily the difference in the
   /// coordinate values, since the surface might have an interesting topology
   /// (e.g. coordinates wrapping across edges).
-  /// Arguments: left_coords, right_coords, batch_size, dest
-  std::function<void(const FloatArr, const FloatArr,
-                     size_t, FloatArr)> CoordDiffs;
+  /// Arguments: leftCoords, rightCoords, batchSize, dest
+  CoordDiffsFn CoordDiffs;
 
   /// Computes the square root of the quadratic form of the metric on a
   /// batch of coordinates and tangent space vectors.
-  /// Arguments: coords, vectors, batch_size, dest
-  std::function<void(const FloatArr, const FloatArr,
-                     size_t, FloatArr)> MetricRootQuadForm;
+  /// Arguments: coords, vectors, batchSize, dest
+  MetricRootQuadFormFn MetricRootQuadForm;
 };
 
 
@@ -36,40 +40,40 @@ class ManifoldFitter {
   struct TrainParams {
     float lr;
     float gamma;
-    float init_noise;
-    int supersample_limit;
-    float supersample_mult;
-    float loss_epsilon;
-    int stagnant_thres;
-    int small_grid_limit;
-    int small_grid_iters;
-    bool print_iters;
-    bool print_total_iters;
+    float initNoise;
+    int supersampleLimit;
+    float supersampleMult;
+    float lossEpsilon;
+    int stagnantThres;
+    int smallGridLimit;
+    int smallGridIters;
+    bool printIters;
+    bool printTotalIters;
   };
 
-  void LoadCoords(FloatArr coords, index_t num_coords) {
+  void LoadCoords(FloatArr coords, index_t numCoords) {
     coords_ = coords;
-    num_coords_ = num_coords;
+    numCoords_ = numCoords;
   }
 
-  void LoadGraph(IndexTArr graph, IndexTArr edge_counts, index_t num_coords,
-                 size_t total_edges) {
+  void LoadGraph(IndexTArr graph, IndexTArr edgeCounts, index_t numCoords,
+                 size_t totalEdges) {
     graph_ = graph;
-    edge_counts_ = edge_counts;
-    num_coords_ = num_coords;
-    total_edges_ = total_edges;
+    edgeCounts_ = edgeCounts;
+    numCoords_ = numCoords;
+    totalEdges_ = totalEdges;
   }
 
-  void SetGridAspect(float grid_aspect) {
-    grid_aspect_ = grid_aspect;
+  void SetGridAspect(float gridAspect) {
+    gridAspect_ = gridAspect;
   }
 
   void SetGeometry(SurfaceGeometry* geometry) {
-    surface_geometry_ = geometry;
+    surfaceGeometry_ = geometry;
   }
 
-  void SetTrainParams(TrainParams* train_params) {
-    train_params_ = train_params;
+  void SetTrainParams(const TrainParams& trainParams) {
+    trainParams_ = trainParams;
   }
 
   void SetSeed(uint64_t seed) {
@@ -78,15 +82,15 @@ class ManifoldFitter {
 
   void Fit(FloatArr dest);
 
-  void Interpolate(FloatArr new_coords, index_t num_new_coords,
+  void Interpolate(FloatArr newCoords, index_t numNewCoords,
                    FloatArr dest);
 
   ManifoldFitter() {
-    grid_points_ = nullptr;
+    gridPoints_ = nullptr;
   }
 
   ~ManifoldFitter() {
-    free(grid_points_);
+    free(gridPoints_);
   }
 
  private:
@@ -99,32 +103,32 @@ class ManifoldFitter {
   }
 
   struct WorkingData {
-    IndexTArr coord_grid_corners;
-    FloatArr coord_grid_surpluses;
-    IndexTArr graph_centers;
-    FloatArr target_distances;
-    FloatArr interpolated_points;
-    FloatArr interpolated_points_grad;
-    FloatArr grid_points_move;
-    FloatArr grid_points_copy;
+    IndexTArr coordGridCorners;
+    FloatArr coordGridSurpluses;
+    IndexTArr graphCenters;
+    FloatArr targetDistances;
+    FloatArr interpolatedPoints;
+    FloatArr interpolatedPointsGrad;
+    FloatArr gridPointsMove;
+    FloatArr gridPointsCopy;
     FloatArr scratchpad;
   };
 
   void Prepare(WorkingData& data);
   void PrepareIteration(WorkingData& data);
   float RunIteration(WorkingData& data);
-  void Supersample(WorkingData& data, float supersample_mult);
+  void Supersample(WorkingData& data, float supersampleMult);
   void Cleanup(WorkingData& data);
 
   /// Variables provided from the outside.
   FloatArr coords_;
   IndexTArr graph_;
-  IndexTArr edge_counts_;
-  float grid_aspect_;
-  SurfaceGeometry* surface_geometry_;
-  TrainParams* train_params_;
-  index_t num_coords_;
-  size_t total_edges_;
+  IndexTArr edgeCounts_;
+  float gridAspect_;
+  SurfaceGeometry* surfaceGeometry_;
+  TrainParams trainParams_;
+  index_t numCoords_;
+  size_t totalEdges_;
 
   /// Variables created internally.
   std::default_random_engine rng_;
@@ -132,9 +136,9 @@ class ManifoldFitter {
   float right_;
   float bottom_;
   float top_;
-  FloatArr grid_points_;
-  index_t grid_width_;
-  index_t grid_height_;
+  FloatArr gridPoints_;
+  index_t gridWidth_;
+  index_t gridHeight_;
 };
 
 #endif
